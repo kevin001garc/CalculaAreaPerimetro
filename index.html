@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Areas & Perimetros</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
+    <link rel="shortcut icon" href="./img/calculadora.svg">
+</head>
+<body>
+    <header class="head">
+        <h1 class="head__titulo">Calculo de figuras geometricas</h1>
+        <p class="head__descripcion">Calcular diferentes areas y perimetros de distintas figuras geometricas</p>
+    </header>
+
+    <main>
+        <div class="resultado" id="result">
+            <h2 class="calcular" data-title></h2>
+        </div>
+
+        <section class="figuras">
+            <div class="container">
+                <div class="container__titulo">
+                    <h3 data-titulo="">Cuadrado</h3>
+                </div>
+                <div class="container__calculo">
+                    <h3 class="container__descripcion">¿Cuanto mide cada lado de tu cuadrado?</h3>
+                    <input class="container__input" 
+                    type="number"
+                    placeholder="lado" 
+                    data-inputCuadrado>
+                    <button class="container__btn" 
+                    data-Cuadrado-Per 
+                    >Perimetro</button>
+                    <button class="container__btn"
+                    data-Cuadrado-Area
+                    >Area</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="container__titulo">
+                    <h3>Circulo</h3>
+                </div>
+                <div class="container__calculo">
+                    <h3 class="container__descripcion">¿Cuanto mide el radio de tu circulo?</h3>
+                    <input class="container__input" type="number" placeholder="radio"
+                    data-input-circulo>
+                    <button class="container__btn"
+                    data-circulo-diametro>Diametro</button>
+                    <button class="container__btn"
+                    data-circulo-perimetro>Perimetro</button>
+                    <button class="container__btn"
+                    data-circulo-Area
+                    >Area</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="container__titulo">
+                    <h3>Triangulo</h3>
+                </div>
+                <div class="container__calculo">
+                    <h3 class="container__descripcion">¿Cuanto mide cada lado de tu triangulo?</h3>
+                    <input class="container__input"
+                    type="number" 
+                    placeholder="lado 1"
+                    data-input-triangulo1>
+                    <input class="container__input" 
+                    type="number" 
+                    placeholder="lado 2"
+                    data-input-triangulo2>
+                    <input class="container__input" 
+                    type="number" 
+                    placeholder="lado 3"
+                    data-input-triangulo3>
+                    <button class="container__btn"
+                    data-triangulo-perimetro>Perimetro</button>
+
+                    <h3 class="container__descripcion">¿Cuanto mide la base y altura de tu triangulo?</h3>
+                    <input class="container__input" 
+                    type="number" 
+                    placeholder="base"
+                    data-input-tringulo-base>
+                    <input class="container__input" 
+                    type="number" 
+                    placeholder="altura "
+                    data-input-triangulo-altura>
+                    <button class="container__btn"
+                    data-triangulo-area>Area</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>
